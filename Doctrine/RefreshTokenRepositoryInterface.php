@@ -17,5 +17,5 @@ interface RefreshTokenRepositoryInterface extends ObjectRepository
      *
      * @return T[]
      */
-    public function findInvalid($datetime = null);
+    public function findInvalid(?\DateTimeInterface $datetime = null);
 }

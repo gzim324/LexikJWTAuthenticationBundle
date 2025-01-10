@@ -17,7 +17,7 @@ class RefreshTokenRepository extends DocumentRepository implements RefreshTokenR
      *
      * @return RefreshToken[]
      */
-    public function findInvalid($datetime = null)
+    public function findInvalid(?\DateTimeInterface $datetime = null)
     {
         $datetime = (null === $datetime) ? new \DateTime() : $datetime;
 

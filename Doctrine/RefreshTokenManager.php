@@ -124,7 +124,7 @@ class RefreshTokenManager implements RefreshTokenManagerInterface
      *
      * @return RefreshTokenInterface[]
      */
-    public function revokeAllInvalid($datetime = null, $andFlush = true)
+    public function revokeAllInvalid(?\DateTimeInterface $datetime = null, $andFlush = true)
     {
         $invalidTokens = $this->repository->findInvalid($datetime);
 

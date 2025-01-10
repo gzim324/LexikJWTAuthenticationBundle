@@ -57,7 +57,7 @@ interface RefreshTokenManagerInterface
      *
      * @return RefreshTokenInterface[]
      */
-    public function revokeAllInvalid($datetime = null);
+    public function revokeAllInvalid(?\DateTimeInterface $datetime = null);
 
     /**
      * Returns the fully qualified class name for a concrete RefreshTokenInterface class.
